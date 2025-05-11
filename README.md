@@ -1,81 +1,42 @@
-# Machine-Learning
-# 🏡 Predicción de precios de Airbnb - Proyecto de Machine Learning
+# ***Machine-Learning***
+*El aprendizaje automático (Machine Learning, ML) es un campo de la inteligencia artificial que permite a las máquinas aprender de los datos y tomar decisiones sin ser programadas explícitamente. A través de algoritmos matemáticos y estadísticas computacionales, ML permite construir modelos capaces de hacer predicciones o descubrir patrones ocultos en grandes volúmenes de información.*
 
-Este proyecto tiene como objetivo desarrollar un modelo de regresión para predecir el precio de anuncios de propiedades en Airbnb, utilizando técnicas de ciencia de datos y aprendizaje automático. A lo largo del proyecto se realiza una exploración, limpieza, preprocesamiento exhaustivo y modelado avanzado del dataset proporcionado.
+----
+##  ***Objetivos del proyecto***
 
----
+*Este proyecto tiene como finalidad desarrollar un modelo de Machine Learning aplicando de manera ordenada y comprensiva distintas técnicas de ciencia de datos y aprendizaje supervisado en un problema de regresión, para predecir el precio de anuncios de propiedades en Airbnb.*
 
-## ⚠️ Disclaimer
+***A lo largo del proceso, se busca:***
 
-El dataset utilizado en este proyecto pertenece a **Airbnb** y ha sido extraído con fines **netamente pedagógicos** y de **aprendizaje personal**.  
-**Este trabajo no tiene fines comerciales** y puede contener errores o aproximaciones con fines ilustrativos.  
-Se recomienda no utilizarlo en producción sin revisión profesional.
-
----
-
-## 📌 Estructura del Proyecto
-
-El desarrollo del proyecto se divide en **tres etapas principales**:
-
-### 1️⃣ Exploración de Datos (EDA) + Técnicas de Análisis
-- Análisis exploratorio y visualización con `Seaborn` y `Matplotlib`
-- Detección de nulos, duplicados y outliers
-- Análisis de distribución y correlación de variables
-- Codificación y conteo de variables categóricas
-- Filtrado de columnas no relevantes
-
-### 2️⃣ Preprocesamiento + Técnicas Avanzadas
-- Imputación de nulos (media, mediana, moda)
-- Escalado y transformación (`StandardScaler`, `RobustScaler`, `LogTransform`)
-- Reducción de dimensionalidad con `PCA`
-- Selección de características con `f_regression`, `mutual_info_regression`
-- Codificación de variables categóricas (`OrdinalEncoder`, `OneHotEncoder`)
-- Preparación para modelos (train/test split, validación cruzada)
-
-### 3️⃣ Despliegue de Algoritmos / Problema de Regresión
-- Modelos implementados:
-  - `LinearRegression`
-  - `Ridge (L2)`
-  - `Lasso (L1)`
-  - `DecisionTreeRegressor`
-  - `KernelRidge`
-  - `HistGradientBoostingRegressor`
-  - `LightGBM`
-  - `XGBoost + GridSearchCV`
-- Evaluación con:
-  - `MSE`, `RMSE`, `MAE`, `R²`
-- Validación cruzada (`cross_val_score`)
-- Ajuste de hiperparámetros (`GridSearchCV`)
+- *Análisis Exploratorio , utilización de técnicas de preprocesamiento, limpieza y tratamiento de valores nulos.*
+- *Detección y gestión de outliers mediante métodos como `Z-Score`, percentiles y visualizaciones "Scatterplots" e "Histogramas".*
+- *Análisis de correlaciones mediante matrices de calor (heatmaps).*
+- *Escalado y transformación de variables numéricas (`StandardScaler`, `Log Transform`).*
+- *Codificación de variables categóricas (mediante `OrdinalEncoder` y `LabelEncoder`).*
+- *Aplicación de Algoritmos de Machine Learning -> Modelos lineales como: `Ridge` y `Lasso`, Árboles de decisión como: `DecisionTreeRegressor` y `HistGradientBoostingRegressor`*
+- *Validación cruzada y ajuste de hiperparámetros con `GridSearchCV`.*
+- *Interpretación de métricas como `MSE` (Error Cuadrático Medio) y `R²` (Coeficiente de Determinación).*
+- *Manejo de Buenas Prácticas como: Separación clara entre conjuntos de entrenamiento y prueba antes de entrenar y modularización del código y comentarios para facilitar la comprensión.
 
 ---
 
-## 💡 Tecnologías y Librerías Utilizadas
+##  ***Tecnologías y Librerías Utilizadas***
 
-- `Python 3.x`
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scikit-learn`
-- `xgboost`
-- `lightgbm`
-- `scipy`
-- `joblib`
-- `warnings`
-- `os` y `sys`
-- `utils` (paquete personalizado del entorno)
-
+- `Python 3.x`, `pandas`, `numpy`,  `matplotlib`, `seaborn`, `scikit-learn`  
 ---
 
-## ✅ Requisitos Previos
+###  ***Requisitos Previos:***
 
-Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:
+*Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:*
 
-1. **Importación del paquete `utils` en el entorno de trabajo**
-   - Asegúrate de que esté disponible en tu carpeta o entorno Jupyter.
-
-2. **Instalación de librerías necesarias**
-   Puedes instalar los requisitos con:
+- *Modificacion de ruta correspondiente para el Dataset*
+- ***Instalación de librerías necesarias**:*
 
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn xgboost lightgbm scipy
+   pip install pandas numpy matplotlib seaborn scikit-learn
+
+---
+### ⚠️ ***Disclaimer***
+
+*El dataset utilizado en este proyecto pertenece a **Airbnb** y ha sido extraído con fines **netamente pedagógicos**.*  
+**Este trabajo no tiene fines comerciales** y contiene errores y aproximaciones con fines ilustrativos.  
