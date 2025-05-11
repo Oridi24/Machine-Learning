@@ -30,7 +30,7 @@
 *Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:*
 
 - *Modificacion de ruta correspondiente para el Dataset*
-- ***Instalación de librerías necesarias**:*
+- *Instalación de librerías necesarias*:
 
    ```bash
    pip install pandas numpy matplotlib seaborn scikit-learn
