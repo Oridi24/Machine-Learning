@@ -1,3 +1,5 @@
+## Memoria de errores
+
 - Has tomado decisiones sobre qué columnas eliminar antes de dividir entre train y test. El error no sería tan grave si no hubieses calculado la correlación. Utilizas la correlación calculada sobre todos los datos para tomar decisiones sobre qué columnas eliminar, etc.
 
 - Esto está mal. El dataset de "test" tiene que funcionar como si fuesen datos completamente nuevos. Si lo has utilizado para calcular correlaciones, ya no son datos nuevos. Esto te va a llevar a sobreestimar el desempeño de tu modelo.
