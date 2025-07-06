@@ -13,9 +13,12 @@
 
 * ***División inicial: Train/Test***:
   * *Separamos el dataset desde el principio para evitar fugas de información y simular un entorno de producción real. Esto garantiza que las decisiones de limpieza y selección de variables se basen solo en el conjunto de entrenamiento.*
+    
 * ***Análisis Estadístico: Medidas de dispersión y localización***:
-  * *El EDA nos permitió identificar valores atípicos, columnas con alta proporción de nulos, variables redundantes y comportamientos inesperados. Tomamos decisiones informadas sobre limpieza y transformación.*    
+  * *El EDA nos permitió identificar valores atípicos, columnas con alta proporción de nulos, variables redundantes y comportamientos inesperados. Tomamos decisiones informadas sobre limpieza y transformación.*
+     
 * ***Filtrado de columnas con +96% de nulos***: *Se eliminaron columnas altamente vacías por su baja utilidad y alto riesgo de ruido o sesgo.*
+  
 * ***Evaluación de relevancia de columnas restantes***: *Se revisó cada columna para decidir si aportaba valor predictivo.*
 
 
@@ -26,19 +29,25 @@
    * *Imputación de valores nulos:*
      * *Numéricos → Mediana (más robusta ante outliers).*
      * *Categóricos → Moda.*
+       
 2. ***Codificación de variables categóricas***: *Se usó `TargetEncoder`, ideal para regresión y superior a `OrdinalEncoder` cuando no hay un orden lógico entre categorías.*
+   
 3. ***Detección y tratamiento de outliers***:*Con Z-Score: se probó con umbrales de 3 (eliminaba 26%) y 4 (15%). Se adoptó 4 como opción intermedia para preservar información sin sacrificar limpieza.*
+   
 4. ***Transformaciones y escalado***: *Se usó StandardScaler y solo se escaló el conjunto de entrenamiento (⚠️ evitar data leakage).*
+   
 5. ***Análisis de correlación***:*Solo sobre `train`, para identificar variables redundantes sin comprometer la integridad del modelo.*
 
 
 ##  *3era Parte: Algoritmos de Machine Learning*
 
 1. ***Transformaciones y preparación***: *Se aplicaron transformaciones logarítmicas y polinómicas (`PolynomialFeatures`) para capturar relaciones no lineales.*
+   
 2. ***Selección y evaluación de modelos***:
    * *Modelos lineales: `Ridge` y `Lasso` → útiles en casos con multicolinealidad.*
    * *Modelos basados en árboles: `DecisionTreeRegressor`, `RandomForestRegressor`, `SVR` con kernel RBF.*
    * *Modelos avanzados: `HistGradientBoostingRegressor`, `LightGBM`, `XGBoost`*.
+     
 3. ***Entrenamiento y métricas***:
    * *Evaluación con `MSE` (Error Cuadrático Medio) y `R²` (Coeficiente de Determinación).*
    * *Validación cruzada (`Cross-Validation`) para evitar overfitting.*
@@ -103,6 +112,7 @@
 
 *Si te ha parecido interesante, no dudes en dejar una estrella ⭐ en el repositorio :)*
 
+---
 
 ### 💡 ***Requisitos Previos:***
 
