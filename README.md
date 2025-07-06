@@ -54,7 +54,7 @@
    * *Ajuste de hiperparámetros con `GridSearchCV`.*
 
 
-## 🔍 *Recapitulación General*
+### 🔍 *Recapitulación General*
 
 * ***Transformaciones consistentes***: *todas las transformaciones fueron aplicadas por separado a `train` y `test` para evitar fugas de información.*
 * ***Variable objetivo***: *`price` fue separada y tratada como variable dependiente en los modelos de regresión.*
@@ -63,14 +63,14 @@
   * 📈 *`R²`: mide proporción de variabilidad explicada por el modelo.*
 
 
-## ⚠️*Atención: Diagnóstico del rendimiento*
+### ⚠️*Atención: Diagnóstico del rendimiento*
 
 * *Los primeros modelos (Ridge/Lasso) mostraron un R² bajo (\~0.22) y MSE alto.*
 * *Estrategias de mejora:*
   * *Se aplicaron transformaciones polinómicas*.
   * *Se probaron modelos más robustos como `SVR`, `RandomForest`, `Bagging`, `Boosting`, etc.*
 
-## 🤖*Justificación de técnicas avanzadas*:
+### 🤖*Justificación de técnicas avanzadas*:
 
 * ***Kernel methods***: *permiten capturar relaciones no lineales transformando el espacio de características.*
 * ***Boosting***: *mejora precisión combinando modelos débiles y corrigiendo errores.*
@@ -79,7 +79,7 @@
 * ***Cross-Validation***: *mejora robustez de evaluación y comparabilidad entre modelos.*
 
 
-## ✅ *Conclusiones Finales*
+### ✅ *Conclusiones Finales*
 
 * ***Mejoras observadas***: *tras aplicar técnicas más avanzadas, el rendimiento mejoró significativamente.*
 * ***Aún hay margen***:
