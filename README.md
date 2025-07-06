@@ -61,7 +61,7 @@
   * *Se aplicaron transformaciones polinómicas*.
   * *Se probaron modelos más robustos como `SVR`, `RandomForest`, `Bagging`, `Boosting`, etc.*
 
-### 🤖*Justificación de técnicas avanzadas*:
+## 🤖*Justificación de técnicas avanzadas*:
 
 * ***Kernel methods***: *permiten capturar relaciones no lineales transformando el espacio de características.*
 * ***Boosting***: *mejora precisión combinando modelos débiles y corrigiendo errores.*
@@ -78,7 +78,7 @@
   * *Selección de características.*
   * *Revisión de outliers y tratamientos con NLP para texto.*
    
-* **Coste computacional**: algunos modelos tardaron hasta 70 minutos*.
+* ***Coste computacional***:*algunos modelos tardaron hasta 70 minutos*.
 
 > *Para los objetivos de este proyecto: manejo adecuado de técnicas de ML, aplicación de modelos avanzados, tratamiento riguroso de datos y documentación clara; este punto marca un cierre adecuado.*
 
@@ -91,7 +91,7 @@
 │   ├── README.md
 │   ├── proyecto_con_data_leakage
 │   │   ├── main_leakage.ipynb
-│   │   └── README.md  # Memoria de errores
+│   │   └── README.md                   💡 # Memoria de errores
 │   └── proyecto_sin_data_leakage
 │       ├── main_final_model.ipynb
 │       └── dataset_final.csv
@@ -104,7 +104,7 @@
 *Si te ha parecido interesante, no dudes en dejar una estrella ⭐ en el repositorio :)*
 
 
-###  ***Requisitos Previos:***
+### 💡 ***Requisitos Previos:***
 
 *Antes de ejecutar el proyecto, asegúrate de cumplir con los siguientes requisitos:*
 
