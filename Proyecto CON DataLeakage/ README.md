@@ -1,6 +1,6 @@
 # *Memoria de errores*
 
-##  📌*Objetivo del Proyecto*
+###  📌*Objetivo del Proyecto*
 
 *El objetivo de este proyecto fue construir un modelo de Machine Learning capaz de predecir el precio de una propiedad listada en Airbnb, utilizando un dataset real obtenido mediante web scraping. Esta versión del proyecto fue la primera aproximación al problema, y aunque logró ciertos resultados razonables, contenía varios errores metodológicos graves que afectaron la validez de los resultados.*
 
@@ -8,7 +8,7 @@
 
 ---
 
-## ❌*Principales Errores Detectados*:
+### ❌*Principales Errores Detectados*:
 
 ###  1. ***Data Leakage: Eliminación de columnas antes del split***
 
@@ -29,7 +29,7 @@
 
 ---
 
-## 🧠 *Lecciones Aprendidas*
+### 🧠 *Lecciones Aprendidas*
 
 1. ✅ ***Separar train/test antes de cualquier transformación***:*Incluso tareas como imputación, eliminación de columnas o escalado deben hacerse *después* del `train_test_split`.*
 2. ✅ ***Evitar el uso de información futura (test) durante el entrenamiento***:*Cualquier conocimiento extraído del test, directo o indirectamente, lleva a un sobreajuste ilusorio.*
@@ -37,7 +37,7 @@
 4. ✅ ***Tener precaución al eliminar outliers***:*Un recorte agresivo puede eliminar datos válidos. Ajustar umbrales y probar distintas estrategias (como `IQR` o `Winsorization`).*
 
 
-## 🚀 *Resultado Final de esta Versión*
+### 🚀 *Resultado Final de esta Versión*
 
 *Aunque el modelo en esta versión presentó un rendimiento teóricamente "bueno", ese resultado no es válido debido a los errores de metodología. Fue una etapa necesaria para comprender la importancia de un pipeline riguroso y reproducible en proyectos de Machine Learning.*
 
