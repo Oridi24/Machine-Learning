@@ -128,4 +128,4 @@
 ### ⚠️ ***Disclaimer***
 
 *El dataset utilizado en este proyecto pertenece a **Airbnb** y ha sido extraído con fines **netamente pedagógicos**.*  
-**Este trabajo no tiene fines comerciales** y contiene errores y aproximaciones con fines ilustrativos.  
+***Este trabajo no tiene fines comerciales*** *y contiene errores y aproximaciones con fines ilustrativos*.  
