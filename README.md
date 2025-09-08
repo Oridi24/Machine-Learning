@@ -127,5 +127,5 @@
 ---
 ### ⚠️ ***Disclaimer***
 
-*El dataset utilizado en este proyecto pertenece a **Airbnb** y ha sido extraído con fines **netamente pedagógicos**.*  
+*El dataset utilizado en este proyecto pertenece a **Airbnb** y ha sido extraído mediante tecnicas de scrapping con fines **investigativos**.*  
 ***Este trabajo no tiene fines comerciales*** *y contiene errores y aproximaciones con fines ilustrativos*.  
